@@ -3,33 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Telecom Company</title>
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header { background-color: #333; color: #fff; padding: 10px 0; text-align: center; }
-        section { padding: 20px; }
-        .projects { background-color: #f4f4f4; }
-        footer { background-color: #333; color: #fff; text-align: center; padding: 10px 0; }
+        header { background-color: #004080; color: white; padding: 10px 0; text-align: center; }
+        main { padding: 20px; }
+        footer { background-color: #004080; color: white; text-align: center; padding: 10px 0; position: fixed; width: 100%; bottom: 0; }
+        .services, .contact { margin: 20px 0; }
     </style>
 </head>
 <body>
     <header>
-        <h1>My Portfolio</h1>
+        <h1>Telecom Company</h1>
     </header>
-    <section class="about">
-        <h2>About Me</h2>
-        <p>This is a brief introduction about myself.</p>
-    </section>
-    <section class="projects">
-        <h2>Projects</h2>
-        <p>Here are some of my projects.</p>
-    </section>
-    <section class="contact">
-        <h2>Contact</h2>
-        <p>Feel free to reach out to me!</p>
-    </section>
+    <main>
+        <section class="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>High-Speed Internet</li>
+                <li>Mobile Plans</li>
+                <li>Home Phone Services</li>
+            </ul>
+        </section>
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <p>Email: contact@telecomcompany.com</p>
+            <p>Phone: 123-456-7890</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2025 My Portfolio</p>
+        <p>&copy; 2025 Telecom Company</p>
     </footer>
 </body>
 </html>
